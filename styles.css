@@ -9,6 +9,51 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.since-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.since-logo img {
+    width: 150px; /* Adjust if needed */
+    height: auto;
+}
+
+.since-logo p {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.join-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.join-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #4CAF50; /* Green color */
 }
 
 .container {
@@ -16,8 +61,27 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
+    max-width: 800px;
     width: 90%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.side-content {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main-content {
+    flex: 1;
 }
 
 .logo {
@@ -84,12 +148,18 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 15px;
+    .content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .title {
-        font-size: 1.5em;
+    .side-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
     }
 }
 

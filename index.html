@@ -4,38 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekrutacja - Los Ciaparitos</title>
-	<meta property="og:title" content="Rekrutacja - Los Ciaparitos" />
+    <meta property="og:title" content="Rekrutacja - Los Ciaparitos" />
     <meta property="og:description" content="Rekrutacja otwarta!" />
     <meta property="og:image" content="1337/logo.png" />
     <meta property="og:url" content="https://los-ciaparitos.github.io" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="1337/logo.png" alt="Logo Los Ciaparitos">
+    <div class="overlay">
+        <div class="since-logo">
+            <img src="1337/since.png" alt="Logo SinceRPG" />
+            <p>Gramy tylko na:</p>
         </div>
-        <h1 class="title">Rekrutacja do Gangu Los Ciaparitos</h1>
-        <form id="recruitment-form">
-            <label for="discord-nick">Nick na Discord:</label>
-            <input type="text" id="discord-nick" required>
+        <a href="mtasa://147.135.199.149:20924" class="join-button">Kliknij aby dołączyć na SinceRPG</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="main-content">
+                <div class="logo">
+                    <img src="1337/logo.png" alt="Logo Los Ciaparitos">
+                </div>
+                <h1 class="title">Rekrutacja do Los Ciaparitos</h1>
+                <form id="recruitment-form">
+                    <label for="discord-nick">Nick na Discord:</label>
+                    <input type="text" id="discord-nick" required>
 
-            <label for="uid">UID:</label>
-            <input type="text" id="uid" required>
+                    <label for="uid">UID:</label>
+                    <input type="text" id="uid" required>
 
-            <label for="age">Wiek:</label>
-            <input type="number" id="age" required>
+                    <label for="age">Wiek:</label>
+                    <input type="number" id="age" required>
 
-            <label for="reason">Dlaczego ty?</label>
-            <textarea id="reason" required></textarea>
-
-            <button type="submit">Wyślij</button>
-        </form>
-        <div class="copyright">
-            &copy; 2024 Los Ciaparitos. Wszelkie prawa zastrzeżone. | <a href="https://discord.gg/EzZGemeXuU" target="_blank" style="color: white; text-decoration: underline; font-weight: bold;">Dołącz do nas na Discordzie</a>
+                    <label for="reason">Dlaczego ty?</label>
+                    <textarea id="reason" required></textarea>
+                    <p></p>
+                    <button type="submit">Wyślij</button>
+                </form>
+                <div class="copyright">
+                    &copy; 2024 Los Ciaparitos. Wszelkie prawa zastrzeżone. | <a href="https://discord.gg/EzZGemeXuU" target="_blank" style="color: white; text-decoration: underline; font-weight: bold;">Dołącz na discord Los Ciaparitos</a>
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
